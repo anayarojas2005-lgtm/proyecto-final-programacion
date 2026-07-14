@@ -1,12 +1,12 @@
 === RECETA MEDICA ===
 Paciente: antonio anaya
-DNI: 78393
-Consultorio: 4
+DNI: 123124
+Consultorio: 1
 
 Sintomas Presentados:
-- Dolor de cabeza
-- Dolor estomacal
+- Tos / Infeccion de garganta
+- Fiebre alta
 
 Medicamentos Recetados:
-- Ibuprofeno 400mg (Cada 8 horas)
-- Bismutol / Ansiolitico digestivo
+- Jarabe para la tos / Amoxicilina 500mg
+- Paracetamol 500mg (Cada 8 horas)
