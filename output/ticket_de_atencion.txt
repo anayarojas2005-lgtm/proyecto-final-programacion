@@ -1,0 +1,4 @@
+TICKET DE ATENCION
+Tipo de Paciente: Con Seguro
+Numero de Ticket: 5220
+dirijase a la ventana :3

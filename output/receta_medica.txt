@@ -1,0 +1,12 @@
+=== RECETA MEDICA ===
+Paciente: antonio anaya
+DNI: 78393
+Consultorio: 4
+
+Sintomas Presentados:
+- Dolor de cabeza
+- Dolor estomacal
+
+Medicamentos Recetados:
+- Ibuprofeno 400mg (Cada 8 horas)
+- Bismutol / Ansiolitico digestivo
