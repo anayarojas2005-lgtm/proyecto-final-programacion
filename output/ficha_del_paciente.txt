@@ -1,6 +1,0 @@
-DATOS DEL PACIENTE:
-Nombre: antonio anaya
-DNI: 123124
-Edad: 20
-Tipo: Con Seguro
-Consultorio Asignado: Consultorio 1
