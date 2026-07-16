@@ -19,14 +19,14 @@ int main(){
 
     // PRIMER TXT: GENERACION DE TICKET PARA ATENCION EN VENTANA
 
-    int numTicket = rand() % 9000 + 1000; // Número aleatorio de 4 digitos {{{{POSIBLE PREGUNTA}}}}
-    int ventanaAsignada = rand() % 5 + 1;    // Ventana aleatoria entre 1 y 5 
+    int numTicket = rand() % 9000 + 1000; 
+    int ventanaAsignada = rand() % 5 + 1;    
 
     ofstream archivoTicket("ticket_de_atencion.txt");
 
     if (archivoTicket.is_open()) {
         archivoTicket << "TICKET DE ATENCION" << endl;
-        archivoTicket << "Tipo de Paciente: " << (tipoP == 1 ? "Con Seguro" : "Regular") << endl; // {{{{POSIBLEMENTE CAMBIE ESTA PARTE PARA UTILIZAR OBJETOS}}}}
+        archivoTicket << "Tipo de Paciente: " << (tipoP == 1 ? "Con Seguro" : "Regular") << endl; 
         archivoTicket << "Numero de Ticket: " << numTicket << endl;
         archivoTicket << "dirijase a la ventana :" << ventanaAsignada << endl;
         archivoTicket.close();
