@@ -9,7 +9,7 @@ int main(){
     srand(time(0));
     int tipoP;
 
-    cout << "    SIMULACION DE ATENCION HOSPITALARIA    " << endl;
+    cout << "    SIMULACION DE ATENCION EN UNA CLINICA   " << endl;
 
     cout << "Tipo de Paciente:" << endl;
     cout << "1. Paciente con Seguro" << endl;
