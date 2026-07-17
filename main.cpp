@@ -92,35 +92,64 @@ int main(){
     cout << "3. Tos / Infeccion de garganta" << endl;
     cout << "4. Dolor estomacal" << endl;
 
+    bool yaFiebre = false;
+    bool yaCabeza = false;
+    bool yaTos = false;
+    bool yaEstomago = false;
+
     int opcionSintoma;
     string listaSintomas = "";
     string listaMedicamentos = "";
 
-    //generacion de receta
-
+    // Creacion de receta
     do {
         cout << "Ingrese numero de sintoma (0 para terminar): ";
         cin >> opcionSintoma;
 
         switch (opcionSintoma) {
             case 1:
-                listaSintomas += "- Fiebre alta\n";
-                listaMedicamentos += "- Paracetamol 500mg (Cada 8 horas)\n";
+                if (!yaFiebre) { 
+                    listaSintomas += "- Fiebre alta\n";
+                    listaMedicamentos += "- Paracetamol 500mg (Cada 8 horas)\n";
+                    yaFiebre = true; 
+                } else {
+                    cout << "El sintoma ya fue agregado." << endl;
+                }
                 break;
+                
             case 2:
-                listaSintomas += "- Dolor de cabeza\n";
-                listaMedicamentos += "- Ibuprofeno 400mg (Cada 8 horas)\n";
+                if (!yaCabeza) {
+                    listaSintomas += "- Dolor de cabeza\n";
+                    listaMedicamentos += "- Ibuprofeno 400mg (Cada 8 horas)\n";
+                    yaCabeza = true;
+                } else {
+                    cout << "El sintoma ya fue agregado." << endl;
+                }
                 break;
+                
             case 3:
-                listaSintomas += "- Tos / Infeccion de garganta\n";
-                listaMedicamentos += "- Jarabe para la tos / Amoxicilina 500mg\n";
+                if (!yaTos) {
+                    listaSintomas += "- Tos / Infeccion de garganta\n";
+                    listaMedicamentos += "- Jarabe para la tos / Amoxicilina 500mg\n";
+                    yaTos = true;
+                } else {
+                    cout << "El sintoma ya fue agregado." << endl;
+                }
                 break;
+                
             case 4:
-                listaSintomas += "- Dolor estomacal\n";
-                listaMedicamentos += "- Bismutol / Ansiolitico digestivo\n";
+                if (!yaEstomago) {
+                    listaSintomas += "- Dolor estomacal\n";
+                    listaMedicamentos += "- Bismutol / Ansiolitico digestivo\n";
+                    yaEstomago = true;
+                } else {
+                    cout << "El sintoma ya fue agregado." << endl;
+                }
                 break;
+                
             case 0:
                 break;
+                
             default:
                 cout << "Opcion no valida. Intente de nuevo." << endl;
                 break;
